@@ -203,6 +203,8 @@ a:hover .line-on-hover {
 
 /* MEDIA QUERIES */
 
+/* WIDTH */
+
 @media screen and (max-width: 1200px) {
   .font-xl {
     font-size: 1.4em;
@@ -232,13 +234,14 @@ a:hover .line-on-hover {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .font-xl {
     font-size: medium;
   }
+
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
   #download-resume {
     padding-top: 1vh;
   }
@@ -250,6 +253,8 @@ a:hover .line-on-hover {
   }
 }
 
+/* HEIGHT */
+
 @media screen and (max-height: 700px) {
   .button-resume {
     height: 6vh;
@@ -260,4 +265,48 @@ a:hover .line-on-hover {
   .font-xl {
     font-size: 0.75em;
   }
+}
+
+/* ORIENTATION */ 
+
+@media (orientation: landscape) and (max-height: 400px) {
+  .font-jumbo {
+    font-size: 1em;
+  }
+  #heading {
+    min-height: 7vh;
+  }
+  .button-resume {
+    min-height: 7vh;
+  }
+  .button-resume:hover {
+    min-height: 12vh;
+  }
+  .font-xxl {
+    font-size: 1em;
+  }
+  .main-wrapper {
+    width: 95vw;
+  }
+  #picture-section {
+    min-height: 0;
+  }
+  #profile-picture {
+    min-height: 0;
+  }  
+}
+
+@media (orientation: landscape) and (max-height: 700px) {
+  .button-resume {
+    max-height: fit-content;
+  }
+  .button-resume:hover {
+    min-height: 9vh;
+  }
+  #picture-section {
+    min-height: 0;
+  }
+  #profile-picture {
+    min-height: 0;
+  }  
 }
