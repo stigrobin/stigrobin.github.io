@@ -6,37 +6,58 @@
     <title>stigrobin.github.io</title>
     <link rel="stylesheet" href="styles.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Major+Mono+Display&display=swap" rel="stylesheet">
 </head>
 <body>
-    <a id="to-top-link" href="#" onclick="return false;" class="to-top transparent no-top hidden">
-        <svg width="60" height="25">
-            <circle class="to-top-circle" cx="30" cy="0" r="25" />
-          </svg>
-        <img class="to-top-icon" src="svg/keyboard_arrow_up-white-24dp.svg" alt="TOP" />
-
-    </a>
-        <nav class="navbar">
-            <div class="nav left">
-                <a href="#"><h4 class="passion-one text-default white">Hem</h4></a>
-                <a href="#"><h4 class="passion-one text-default white">Profil</h4></a>
-                <a href="#"><h4 class="passion-one text-default white">Projekt</h4></a>
+    <div class="main-container">
+        <div class="main-wrapper">
+            <div id="heading" class="align-hor-ver">
+                <h1 class="josefin white font-jumbo">Hej</h1>
+                <h1 class="josefin green font-jumbo">.</h1>
             </div>
-            <div class="nav right">
-                <a href="#"><h4 class="passion-one text-default white">Kontakt</h4></a>
+            <hr class="header-line"/>
+            <div id="text-section">
+                <p class="josefin white inline font-xl">
+                    Jag heter Robin Karlsson och är en nyexaminerad systemutvecklare. År 2020 tog jag min examen från Systemvetenskapliga programmet på Örebro universitet. Jag är 28 år <del>gammal</del> ung och bor i Arboga.
+                    <br><br>
+                    Just nu letar jag efter möjligheter att vidareutveckla mina kunskaper, där centralt just nu är </p>
+                    <p class="josefin green inline font-xl">.NET</p>
+                    <p class="josefin white inline font-xl"> och </p> 
+                    <p class="josefin green inline font-xl">webb</p>
+                    <p class="josefin white inline font-xl">.</p>
+                    <br><br>
+                    <p class="josefin white inline font-xl">På fritiden håller jag på mycket med musik, umgås med vänner och familj; och om tillfälle finns spelas gärna en del sällskaps- eller datorspel</p>
+                    <p class="josefin green inline font-xl">.</p>
             </div>
-        </nav>
-        <div class="mainsection">
-        <div class="fullsection top-padded semi-dark">
-            <div class="section-introduction-text">
-                <h1 class="passion-one text-large white text-center">Robin Karlsson</h1>
-                <h3 class="passion-one text-medium white text-center">Junior Systemutvecklare</h3>
-                <a href="#" class="resume-button"><p class="white">Ladda hem CV</p></a>
+            <div id="picture-section">
+                <div id="profile-picture"></div>
             </div>
+            <div id="resume" class="align-hor-ver">
+                <a id="download-resume" href="javascript:void(0);" class="button-resume josefin white">
+                    <p class="josefin white font-xxl">CV</p>
+                    <hr class="line-on-hover"/>
+                </a>
+            </div>
+            <div id="footer-links" class="align-hor-ver">
+                <a href="https://github.com/stigrobin?tab=repositories" target="_blank" class="josefin white font-xxl">PROJEKT</a>
+                <a href="mailto:stigrobin@hotmail.se" class="josefin white font-xxl">KONTAKT</a>
+            </div>
+            <hr class="footer-line"/>
+            <div id="footer-icons">
+                <a  title="Linkedin" href="https://www.linkedin.com/in/robin-karlsson-386824189/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg>
+                </a>
+                <a title="Soundcloud" href="https://soundcloud.com/tjabbarobin" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2.709 15h-.541v-4.4c.167-.126.347-.234.541-.309v4.709zm1.625 0h.543v-5.031c-.125.145-.24.299-.337.468l-.206-.101v4.664zm-1.082 0h.541v-4.826c-.274-.043-.337-.027-.541-.005v4.831zm-2.168 0h.543v-3.829c-.17.25-.302.529-.375.836l-.168-.099v3.092zm-1.625-2.863c-.329.298-.541.738-.541 1.236 0 .499.212.938.541 1.238v-2.474zm10.227-.366c-.11-1.548-1.302-2.771-2.772-2.771-.554 0-1.064.179-1.496.479v5.521h4.924c.87 0 1.576-.76 1.576-1.695 0-1.218-1.174-2.056-2.232-1.534zm-9.143-.016c-.163-.014-.285-.017-.541.066v3.103c.241.078.345.076.541.076v-3.245z"/></svg>
+                </a>
+                <a title="Facebook" href="https://www.facebook.com/tjabbarobin/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg>
+                </a>
+            </div>
+            <div id="contact-form"></div>
         </div>
     </div>
-
 
         <script src="main.js"></script>
 </body>
