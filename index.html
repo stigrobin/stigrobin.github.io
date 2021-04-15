@@ -11,6 +11,14 @@
 </head>
 <body>
     <div class="main-container">
+        <div class="language-container">
+            <a href="javascript:void(0);" class="lang-link" data-language="sv">
+                <img class="lang-flag" alt="SV" src="images/se.png" width=80 height=40>
+            </a>
+            <a href="javascript:void(0);" class="lang-link" data-language="en">
+                <img class="lang-flag" alt="EN" src="images/en.png" width=80 height=40>
+            </a>
+        </div>
         <div class="main-wrapper">
             <div id="heading" class="align-hor-ver">
                 <h1 class="josefin white font-jumbo">Hej</h1>
@@ -34,7 +42,7 @@
                 <div id="profile-picture"></div>
             </div>
             <div id="resume" class="align-hor-ver">
-                <a id="download-resume" href="javascript:void(0);" class="button-resume josefin white">
+                <a id="download-resume" lang="sv" href="javascript:void(0);" class="button-resume josefin white" data-content="Öppna PDF">
                     <p class="josefin white font-xxl">CV</p>
                     <hr class="line-on-hover"/>
                 </a>
@@ -60,5 +68,6 @@
     </div>
 
         <script src="main.js"></script>
+        <script src="languages.js"></script>
 </body>
 </html>

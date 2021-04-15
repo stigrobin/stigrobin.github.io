@@ -68,6 +68,18 @@ svg:hover {
   font-size: 6em;
 }
 
+.border-white {
+  border: 1px solid white;
+}
+
+.low-brightness {
+  filter: brightness(0.5);
+}
+
+.no-click {
+  pointer-events: none;
+}
+
 .main-container {
   background-image: url(images/laptop.jpg);
   background-position-y: 30%;
@@ -75,6 +87,20 @@ svg:hover {
   min-height: 100vh;
   min-width: 100vw;
   overflow: hidden;
+}
+
+.language-container {
+  display: flex;
+  flex-direction: column;
+  height: 14vh;
+  justify-content: space-evenly;
+  left: 60%;
+  position: absolute;
+}
+
+.lang-link {
+  height: 40px;
+  width: 80px;
 }
 
 .main-wrapper {
@@ -165,7 +191,7 @@ a:hover .line-on-hover {
 }
 
 .button-resume::after {
-  content: "Öppna PDF";
+  content: attr(data-content);
   font-size: small;
   opacity: 0;
   transition: all 0.5s;
@@ -215,13 +241,22 @@ a:hover .line-on-hover {
   .main-wrapper {
     width: 70vw;
   }
+  .main-container {
+    background-position-x: 50%;
+  }
+  .language-container {
+    left: 70%;
+  }
+  .button-resume {
+    width: auto;
+  }
 }
 @media screen and (max-width: 600px) {
   .button-resume {
     height: 4vh;
   }
   .button-resume:hover {
-    height: 8vh;
+    height: 6vh;
   }
   .font-xl {
     font-size: 1.25em;
@@ -231,6 +266,10 @@ a:hover .line-on-hover {
   }
   .main-wrapper {
     width: 80vw;
+  }
+  .lang-link, .lang-flag {
+    width: 40px;
+    height: 20px;
   }
 }
 

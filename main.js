@@ -1,6 +1,9 @@
-//Hook up event for opening resume in new tab
-document.getElementById('download-resume').addEventListener('click', () => {
-  window.open('files/CV-no-phone.pdf', '_blank').focus();
-  return false;
-});
+const resumeButton = document.getElementById('download-resume');
+
+resumeButton.addEventListener('click', downloadResume, { once: false });
+
+function downloadResume() {
+  let file = resumeButton.lang == 'sv' ? 'files/CV-no-phone.pdf' : 'files/CV-no-phone-en.pdf';
+  window.open(file, '_blank').focus();
+}
 
