@@ -59,14 +59,23 @@ const english = {
 };
 
 function changeLanguage(language) {
-  elements.heading.innerHTML = language.heading;
-  elements.textSection.innerHTML = language.textSection;
-  elements.resume.innerHTML = language.resume;
-  elements.resume.lang = language.resumeLang;
-  elements.resume.dataset.content = language.resumeDataContent;
-  elements.footerLinks.innerHTML = language.footerLinks;
+  Object.values(elements).forEach((e) => {
+    e.classList.add('invisible');
+  });
 
-  setActiveLanguage();
+  setTimeout(() => {
+      elements.heading.innerHTML = language.heading;
+      elements.textSection.innerHTML = language.textSection;
+      elements.resume.innerHTML = language.resume;
+      elements.resume.lang = language.resumeLang;
+      elements.resume.dataset.content = language.resumeDataContent;
+      elements.footerLinks.innerHTML = language.footerLinks; 
+      
+      Object.values(elements).forEach((e) => {
+        e.classList.remove('invisible');
+      });
+      setActiveLanguage();
+  }, 500);
 }
 
 function setActiveLanguage() {

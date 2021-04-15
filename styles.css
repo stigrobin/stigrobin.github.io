@@ -80,6 +80,18 @@ svg:hover {
   pointer-events: none;
 }
 
+.anim-medium {
+  transition: all 0.5s;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
 .main-container {
   background-image: url(images/laptop.jpg);
   background-position-y: 30%;
