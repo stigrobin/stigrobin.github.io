@@ -302,6 +302,9 @@ a:hover .line-on-hover {
   #profile-picture {
     min-height: 0;
   }
+  .language-container {
+    left: 74%;
+  }
 }
 
 /* HEIGHT */
@@ -319,6 +322,28 @@ a:hover .line-on-hover {
 }
 
 /* ORIENTATION */ 
+
+@media (orientation: landscape) and (max-height: 700px) {
+  .button-resume {
+    max-height: fit-content;
+  }
+  .button-resume:hover {
+    min-height: 9vh;
+  }
+  #picture-section {
+    min-height: 0;
+  }
+  #profile-picture {
+    min-height: 0;
+  } 
+  .language-container {
+    padding-top: 2vh;
+  } 
+  .lang-flag {
+    width: 40px;
+    height: 20px;
+  }  
+}
 
 @media (orientation: landscape) and (max-height: 400px) {
   .font-jumbo {
@@ -344,20 +369,13 @@ a:hover .line-on-hover {
   }
   #profile-picture {
     min-height: 0;
-  }  
-}
-
-@media (orientation: landscape) and (max-height: 700px) {
-  .button-resume {
-    max-height: fit-content;
   }
-  .button-resume:hover {
-    min-height: 9vh;
+  .language-container {
+    flex-direction: row;
+    padding-top: 1vh;
   }
-  #picture-section {
-    min-height: 0;
-  }
-  #profile-picture {
-    min-height: 0;
-  }  
+  .lang-flag {
+    width: 30px;
+    height: 15px;
+  } 
 }
