@@ -38,12 +38,12 @@ const english = {
     '<h1 class="josefin green font-jumbo">.</h1>',
   textSection:
     '<p class="josefin white inline font-xl">' +
-    "My name is Robin Karlsson, a 28 years <del>old</del> young newly graduated sytems developer. I recently finished my bachelor's degree in informatics at Örebro University." +
+    "My name is Robin Karlsson, a 28 year <del>old</del> young newly graduated sytems developer. I recently finished my bachelor's degree in informatics at Örebro University." +
     "<br><br>" +
-    "I am now looking for opportunities to expand my skill set in IT, and to help people find good IT solutions. As for today I have invested most of my time in </p>" +
+    "I am now looking for opportunities to expand my skill set in IT, and to help people find good suitable IT solutions. As for today I have invested most of my time in </p>" +
     '<p class="josefin green inline font-xl">.NET</p>' +
     '<p class="josefin white inline font-xl"> and </p>' +
-    '<p class="josefin green inline font-xl">web</p>' +
+    '<p class="josefin green inline font-xl">web development</p>' +
     '<p class="josefin white inline font-xl">.</p>' +
     "<br><br>" +
     '<p class="josefin white inline font-xl">In my spare time I enjoy making music, spending time with friends and family; and on some occasion, play some video- or board game</p>' +
